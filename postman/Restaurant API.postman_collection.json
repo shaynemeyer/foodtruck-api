@@ -1,0 +1,100 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Restaurant API",
+		"_postman_id": "8d44ebea-480b-afd8-79ab-8a7d3082b778",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Restaurant",
+			"request": {
+				"url": "http://localhost:3005/v1/restaurant/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Geenas BBQ\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Restaurant",
+			"request": {
+				"url": "http://localhost:3005/v1/restaurant",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Restaurant By Id",
+			"request": {
+				"url": "http://localhost:3005/v1/restaurant/5841e2cf331a7973c1abad08",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Restaurant",
+			"request": {
+				"url": "http://localhost:3005/v1/restaurant/5841e492e0b97673e2095291",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Gillians BBQ\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Restaurant",
+			"request": {
+				"url": "http://localhost:3005/v1/restaurant/5843775b596aa73eb346fdfd",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "//Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
