@@ -21,7 +21,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Joe's Stabbin Wagon\",\n\t\"foodtype\": \"Meat\",\n\t\"avgcost\": 5.99,\n\t\"geometry\": {\"coordinates\": [35.89, -89.324]}\n}"
+					"raw": "{\n  \"name\": \"Joe's Stabbin Wagon\",\n  \"foodtype\": \"Meat\",\n  \"avgcost\": 5.99,\n  \"geometry\": {\"coordinates\": [35.89, -89.324]}\n}"
 				},
 				"description": ""
 			},
@@ -69,7 +69,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Misty's Pancake Shack\",\n\t\"foodtype\": \"Breakfast\",\n\t\"geometry\": {\"coordinates\": [33.89, -93.324]}\n}"
+					"raw": "{\n  \"name\": \"Misty's Pancake Shack\",\n  \"foodtype\": \"Breakfast\",\n  \"geometry\": {\"coordinates\": [33.89, -93.324]}\n}"
 				},
 				"description": ""
 			},
@@ -110,7 +110,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"title\": \"Just ok\",\n\t\"text\": \"Nothing to write home about.\"\n}"
+					"raw": "{\n  \"title\": \"Just ok\",\n  \"text\": \"Nothing to write home about.\"\n}"
 				},
 				"description": ""
 			},
@@ -120,6 +120,20 @@
 			"name": "Get Reviews by Food Truck Id",
 			"request": {
 				"url": "http://localhost:3005/v1/foodtruck/reviews/58456ed448060d266acb6a3f",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Foodtrucks by food type",
+			"request": {
+				"url": "http://localhost:3005/v1/foodtruck/foodtype/breakfast",
 				"method": "GET",
 				"header": [],
 				"body": {
