@@ -1,14 +1,14 @@
 {
 	"variables": [],
 	"info": {
-		"name": "Restaurant API",
-		"_postman_id": "8d44ebea-480b-afd8-79ab-8a7d3082b778",
+		"name": "FoodTruck API",
+		"_postman_id": "89a7f670-e028-5613-9a06-e4e5391d1871",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Add Restaurant",
+			"name": "Add FoodTruck",
 			"request": {
 				"url": "http://localhost:3005/v1/restaurant/add",
 				"method": "POST",
