@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "FoodTruck API",
-		"_postman_id": "89a7f670-e028-5613-9a06-e4e5391d1871",
+		"_postman_id": "cc9d1311-b266-8927-31fe-ec7f2e88a4a4",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -21,7 +21,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Pam's Pancake Shack\",\n\t\"foodtype\": \"Breakfast\",\n\t\"avgcost\": 7.99,\n\t\"geometry\": [33.89, -93.324]\n}"
+					"raw": "{\n\t\"name\": \"Joe's Stabbin Wagon\",\n\t\"foodtype\": \"Meat\",\n\t\"avgcost\": 5.99,\n\t\"geometry\": {\"coordinates\": [35.89, -89.324]}\n}"
 				},
 				"description": ""
 			},
@@ -44,7 +44,7 @@
 		{
 			"name": "Get FoodTruck By Id",
 			"request": {
-				"url": "http://localhost:3005/v1/foodtruck/5844b7af62d3120afd46d0cd",
+				"url": "http://localhost:3005/v1/foodtruck/58457623a3d9c3407ef436c4",
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -58,7 +58,7 @@
 		{
 			"name": "Update FoodTruck",
 			"request": {
-				"url": "http://localhost:3005/v1/foodtruck/5841e492e0b97673e2095291",
+				"url": "http://localhost:3005/v1/foodtruck/58456ed448060d266acb6a3f",
 				"method": "PUT",
 				"header": [
 					{
@@ -69,7 +69,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Gillians BBQ\"\n}"
+					"raw": "{\n\t\"name\": \"Misty's Pancake Shack\",\n\t\"foodtype\": \"Breakfast\",\n\t\"geometry\": {\"coordinates\": [33.89, -93.324]}\n}"
 				},
 				"description": ""
 			},
@@ -78,7 +78,7 @@
 		{
 			"name": "Delete FoodTruck",
 			"request": {
-				"url": "http://localhost:3005/v1/foodtruck/5843775b596aa73eb346fdfd",
+				"url": "http://localhost:3005/v1/foodtruck/58456ed448060d266acb6a3f",
 				"method": "DELETE",
 				"header": [
 					{
@@ -99,7 +99,7 @@
 		{
 			"name": "Add FoodTruck Review",
 			"request": {
-				"url": "http://localhost:3005/v1/foodtruck/reviews/add/5844b7af62d3120afd46d0cd",
+				"url": "http://localhost:3005/v1/foodtruck/reviews/add/58456ed448060d266acb6a3f",
 				"method": "POST",
 				"header": [
 					{
@@ -119,7 +119,7 @@
 		{
 			"name": "Get Reviews by Food Truck Id",
 			"request": {
-				"url": "http://localhost:3005/v1/foodtruck/reviews/5844b7af62d3120afd46d0cd",
+				"url": "http://localhost:3005/v1/foodtruck/reviews/58456ed448060d266acb6a3f",
 				"method": "GET",
 				"header": [],
 				"body": {
