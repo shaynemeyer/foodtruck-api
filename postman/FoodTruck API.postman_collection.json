@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "FoodTruck API",
-		"_postman_id": "cc9d1311-b266-8927-31fe-ec7f2e88a4a4",
+		"_postman_id": "c9c15050-14ed-acad-4e5b-1da42376c411",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -136,6 +136,66 @@
 				"url": "http://localhost:3005/v1/foodtruck/foodtype/breakfast",
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register Account",
+			"request": {
+				"url": "http://localhost:3005/v1/account/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"booboo@honey.com\",\n\t\"password\": \"bunnies\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Account login",
+			"request": {
+				"url": "http://localhost:3005/v1/account/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"booboo@honey.com\",\n\t\"password\": \"bunnies\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Account me",
+			"request": {
+				"url": "http://localhost:3005/v1/account/me",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4NDYyYTRkM2U0OTA5MGNlZmY0OTUxMyIsImlhdCI6MTQ4MDk5MzU4NywiZXhwIjoxNDgzNTg1NTg3fQ.4FVNFkIhju6JYjZNIZ-Pag1-x-sirHYJH9G7T9Zbfi8",
+						"description": ""
+					}
+				],
 				"body": {
 					"mode": "formdata",
 					"formdata": []
